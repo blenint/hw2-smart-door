@@ -1,0 +1,20 @@
+{
+   "Name": "FacialRecognitionStreamProcessor",
+   "Input": {
+    "KinesisVideoStream": {
+       "Arn": "arn:aws:kinesisvideo:us-east-1:376885051186:stream/KVS1/1606199325135"
+    }
+   },
+   "Output": {
+    "KinesisDataStream": {
+       "Arn": "arn:aws:kinesis:us-east-1:376885051186:stream/FacialRecognition"
+    }
+   },
+   "RoleArn": "arn:aws:iam::376885051186:role/hw2rek",
+   "Settings": {
+    "FaceSearch": {
+       "CollectionId": "faces",
+       "FaceMatchThreshold": 85.5
+    }
+   }
+}
